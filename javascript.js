@@ -11,7 +11,7 @@ function thankYou(){
     }
     else{
         var current = window.location.href;
-        var newpage = current.replace(/index/,"thankyou");
+        var newpage = current + "thankyou";
         window.location.href = newpage;
     }
 }
