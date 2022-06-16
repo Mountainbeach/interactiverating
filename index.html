@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <div class="staricondiv">
+            <img class="staricon" src="images/icon-star.svg" alt="Star icon">
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+            Please let us know how we did with your support request.
+            All feedback is appreciated to help us improve our offering!
+        </p>
+        <form id="ratingform" name="ratingform" action="javascript:thankYou()">
+            <input type="radio" name="rating" class="ratingbutton first" value="1">
+            <input type="radio" name="rating" class="ratingbutton" value="2">
+            <input type="radio" name="rating" class="ratingbutton" value="3">
+            <input type="radio" name="rating" class="ratingbutton" value="4">
+            <input type="radio" name="rating" class="ratingbutton" value="5">
+            <input type="submit" class="submitbutton">
+        </form>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+</html>
