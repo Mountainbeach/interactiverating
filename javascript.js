@@ -1,4 +1,6 @@
 const ratingform = document.querySelector("#ratingform");
+const thankyou = document.querySelector(".thankyoudiv");
+const selectedratingspan = document.querySelector("#selectedrating");
 var ratingvalue;
 
 function thankYou(){   
@@ -10,17 +12,7 @@ function thankYou(){
         return;
     }
     else{
-        var current = window.location.href;
-        var newpage = current + "thankyou";
-        window.location.href = newpage;
+        thankyou.style.display = "block";
+        selectedratingspan.innerHTML = ratingvalue;
     }
-}
-
-function setRatingValue(){
-    ratingvalue = sessionStorage.getItem("rating");
-    console.log(ratingvalue + "HAHA");
-    var selectedratingspan = document.querySelector("#selectedrating");
-    console.log(selectedratingspan);
-    selectedratingspan.innerHTML = ratingvalue;
-    return
 }
